@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/estilos.css">
+    <style>
+        marl {
+            background-color: blueviolet;
+        }
+
+        /* 
+        ESTILOS INTERNOS
+        body{
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        h2{
+            color: darkolivegreen;
+        }
+
+        h3{
+            color: rgb(137, 158, 102);
+        }
+        h4{
+            color: rgb(137, 158, 102);
+        }
+
+        p{
+            text-align: justify;
+        } */
+    </style>
+
+    <link rel="shortcut icon" href="src/imagens/icon-html.ico" type="image/x-icon">
+    <title>Curso em Video</title>
+</head>
+<body>
+
+    <h1>Exercicios das Aulas do Módulo 1 de HTML 5 e CSS 3</h1>
+    <hr>
+    <h2>Olá Mundo</h2>
+    <p>Esse é meu primeiro arquivo html. Estou Muito Feliz!</p>
+    <p>oi amaury lindo cheiroso</p>
+    <hr>
+    <h2>Paragrafos e quebras de linha</h2>
+    <p>A tag &lt;hr&gt; serve pra fazer uma linha horizontal no site <br> e a tag &lt;br&gt; serve pra fazer quebra de linha, e pode ficar dentro ou entre paragrafos </p>
+    <p>lt = less than e gt = greater than</p>
+    <p>exemplos de simbolos: &reg; &copy; &trade; &euro; &pound; </p>
+    <hr> 
+    <h2>Testando carga de imagens</h2>
+    <p>Abaixo você vai ver uma imagem que está na mesma pasta</p>
+    <img src="./logohtml5-200px.png" alt="logo do html 5">
+    <p>Podemos também carregar imagens que estão em sub pastas</p>
+    <img src="./src/imagens/logocss3-200px.png" alt="logo do css 3">
+    <p>Também podemos carregar imagens externas</p>
+    <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" alt="logo javascript">
+    <hr>
+    <h2>Olha o favicon ali em cima</h2>
+    <hr>
+    <h2>Entendendo Portugal</h2>
+    <h3>1. INTRODUÇÃO</h3>
+    <h4>1.1 JUSTIFICAÇÃO DA TEMÁTICA</h4>
+    <h4>1.2 CARÁTER EXCECIONAL DO CASO DE ESTUDO</h4>
+    <h4>1.3 PERGUNTAS DE PARTIDA E OBJETIVOS DE INVESTIGAÇÃO</h4>
+    <h4>1.4 METODOLOGIA DE INVESTIGAÇÃO</h4>
+    <h5>1.4.1 Etapas de investigação</h5>
+    <h5>1.4.2 Instrumentos de análise e fontes de informação</h5>
+    <h3>2. O ORDENAMENTO DO TERRITÓRIO DE PORTUGAL: INSTRUMENTOS E ATORES</h3>
+    <h4>2.1 OS INSTRUMENTOS DE GESTÃO DO TERRITÓRIO</h4>
+    <h5>2.1.1 Os instrumentos de planeamento territorial</h5>
+    <h5>2.1.2 Os regimes territoriais especiais</h5>
+    <hr>
+    <h2>Formatação de Texto</h2>
+    <h3>Principais Formartações</h3>
+    <h4>Negrito / Destaque</h4>
+    <p>Nessa frase temos um <b>termo em negrito</b> usado a tag B (não semântica). Nessa frase tenho um <strong>termo em destaque</strong> usando a tag Strong (semântica)</p>
+    <h4>Itálico / ênfase</h4>
+    <p>Nessa frase temos um <i>termo em itálico</i> usando a tag I (não semântica). Nessa frase temos um <em>termo em itálico</em> usando a tag EM (com semântica)</p>
+    <h4>Texto Marcado</h4>
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag MARK</p>
+    <h4>Texto grande e pequeno</h4>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse paragrafo</p>
+    <h4>Texto deletado</h4>
+    <p>Podemos criar <del>um texto como excluido</del> para ele ser lido, mas não considerado</p>
+    <h4>texto inserido</h4>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. Existe também o <u>sublinhado</u> com a tag U (não semântico)</p>
+    <h4>Texto sobrescrito</h4>
+    <p>Para inserir coisas do tipo x<sup>20</sup> + 3</p>
+    <h4>Texto subscrito</h4>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+    <hr>
+    <h3>Outras Formatações</h3>
+    <h4>Código-Fonte e Pré-formatação</h4>
+    <p>o comando <code>document.getElementById('teste')</code> é escrito em lingaugem JavaScript</p>
+    <pre>
+        <code>
+num = int(imput('Digite um número'))
+if num % 2 == 0:
+    print(f'O número {num} é PAR')
+else:
+    print(f'O número {num} é ÍMPAR')
+    print('Fim do Programa')
+        </code>
+    </pre>
+    <h4>Citações</h4>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <h4>Citações Completas</h4>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos</p>
+    <blockquote cite="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-8-aula-4-citacoes-e-codigos/">
+        Você sabe como adicionar citações ao seu site? Sabe como representar um trecho de código dentro de uma página? Veja a resposta para todas essas perguntas assistindo esse vídeo até o final.
+    </blockquote>
+    <h4>Abreviações</h4>
+    <p>Estou estudando <abbr title="Hyper Text Marckup Lenguage">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando</p>
+    <h4>Texto Invertido</h4>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+    <hr>
+    <h2>Trabalhando com Listas</h2>
+    <h3>Listas Ordenadas</h3>
+    <ol type="I">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar Café</li>
+        <li>Escovar os Dentes</li>
+        <li>Ir para a Faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o Trabalho</li>
+        <li>Voltar para a Casa</li>
+    </ol>
+    <h3>Listas Não Ordenadas</h3>
+    <ul type="square">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Peixe</li>
+        <li>Preguiça de fazer um monte</li>
+    </ul>
+    <h3>Minhas Linguagens Favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h3>Jogos Favoritos</h3>
+    <ol>
+        <li>NES</li>
+        <ul>
+            <li>Super Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+                <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul>
+            <li>Super Mario Bros</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul>
+            <li>Final Fantasy</li>
+            <li>Castelvania</li>
+            </ul>
+        </ol>
+    <h3>Lista de Definição</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do desing de um site</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+        </dl>
+    <hr>
+    <h2>Usando Links Externos</h2>
+        <p>Você pode acessar meu <a href="https://github.com/kinitosz" target="_blank" rel="external">repositório publico do GitHub</a></p>
+        <p>Você também pode acessar meu <a href="https://www.youtube.com/channel/UC9AL3tXITwZiPASvUA1nkPQ" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+        <h3>Usando Links Internos</h3>
+        <p>Você pode acessar minha outra página <a href="./pag002.html" rel="next">clicando aqui</a></p>
+        <p>Você também pode acessa minha terceira página, que está dentro de uma pasta, <a href="./paginas/pag003.html">clicando aqui</a></p>
+    <h3>Links para Download</h3>
+        <ul>
+            <li><a href="./download/MAPADEV-2023.pdf" download="mapadev.pdf" type="application/pdf">Baixar o livro PDF</a></li>
+            <li><a href="./download/MAPADEV-2023.zip" type="applicatin/zip">Livro compactado em ZIP</a></li>
+        </ul>
+        <hr>
+    <h2>Imagens que se adaptam sozinhas</h2>
+        <p>Tente abrir esse site em varios dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    
+        <picture>
+            <source media="(max-width: 780px)" srcset="src/imagens/pequena.png" type="image/png">
+            <source media="(max-width: 1080px)" srcset="src/imagens/media.png" type="image/png">
+            <img src="src/imagens/grande.png" alt="imagem flexivel">
+    
+        </picture>
+        <hr>
+        <h2>Reproduzindo áudios</h2>
+        <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+        <audio preload="metadata" controls loop>
+            <source src="src/midia/so-this-is-love.mp3" type="audio/mpeg">
+       <!-- <source src="src/midia/so-this-is-love.wav">
+            <source src="src/midia/so-this-is-love.ogg"> 
+            Lembrar de usar o outros formatos!-->
+            Infelizmente o seu navegador não tem suporte para esse tipo de arquivo. <a href="src/midia/so-this-is-love.mp3">Clique aqui para baixa-lo</a>
+        </audio>
+        <hr>
+        <h2>Inserindo Videos Hospedados Localmente</h2>
+        <p>Esse video está hospedado no meu próprio servidor</p>
+        <video width="560px" poster="src/imagens/thumb.jpg" controls>
+            <source src="src/midia/guivenmdm.mp4">          
+       <!-- <source src="src/midia/guivenmdm.m4v">
+            <source src="src/midia/guivenmdm.ogv"> 
+            <source src="src/midia/guivenmdm.webm">
+            Lembrar de usar o outros formatos!-->
+            <p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+        </video>
+        <hr>
+        <h2>Inserindo Videos do YouTube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WXQmxyWVyxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <hr>
+        <h2>Inserindo Videos do Vimeo</h2>
+        <iframe src="https://player.vimeo.com/video/485545155?h=b61816ff9a" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+        <h2>Estilos Inline</h2>
+        <h3>Capitulo 1</h3>
+        <h4>Capitulo 1.1</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate molestias quibusdam repellendus sunt necessitatibus totam laudantium illum quis laboriosam. Fuga itaque consectetur nemo odit sint perspiciatis molestias? Iusto, minima aliquid!</p>
+        <h4>Capitulo 1.2</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt accusantium quidem tempora veritatis sapiente eius exercitationem inventore quae, provident illo placeat ad, voluptates vel delectus laudantium! Aliquid eveniet nam velit!</p>
+        <h3>Capitulo 2</h3>
+        <h4>Capitulo 2.1</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laudantium, earum officia quisquam temporibus aliquid odio voluptatem accusantium eaque esse placeat veniam architecto provident? Velit ex impedit repudiandae voluptatem est!</p>
+        <hr>
+        <h2>Estilos Locais ou Internos</h2>
+        <h3>Capitulo 1</h3>
+        <h4>Capitulo 1.1</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate molestias quibusdam repellendus sunt necessitatibus totam laudantium illum quis laboriosam. Fuga itaque consectetur nemo odit sint perspiciatis molestias? Iusto, minima aliquid!</p>
+        <h4>Capitulo 1.2</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt accusantium quidem tempora veritatis sapiente eius exercitationem inventore quae, provident illo placeat ad, voluptates vel delectus laudantium! Aliquid eveniet nam velit!</p>
+        <h3>Capitulo 2</h3>
+        <h4>Capitulo 2.1</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laudantium, earum officia quisquam temporibus aliquid odio voluptatem accusantium eaque esse placeat veniam architecto provident? Velit ex impedit repudiandae voluptatem est!</p>
+        <hr>
+        <h2>Estilos Locais ou Internos</h2>
+        <h3>Capitulo 1</h3>
+        <h4>Capitulo 1.1</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate molestias quibusdam repellendus sunt necessitatibus totam laudantium illum quis laboriosam. Fuga itaque consectetur nemo odit sint perspiciatis molestias? Iusto, minima aliquid!</p>
+        <h4>Capitulo 1.2</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt accusantium quidem tempora veritatis sapiente eius exercitationem inventore quae, provident illo placeat ad, voluptates vel delectus laudantium! Aliquid eveniet nam velit!</p>
+        <h3>Capitulo 2</h3>
+        <h4>Capitulo 2.1</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laudantium, earum officia quisquam temporibus aliquid odio voluptatem accusantium eaque esse placeat veniam architecto provident? Velit ex impedit repudiandae voluptatem est!</p>
+        <p><a href="pag002.html" target="_self">Ir para a página 2</a></p>
+        <hr>
+        <h1>Exercicios das Aulas do Módulo 2 de HTML 5 e CSS 3</h1>
+        <h2>Cores em CSS</h2>
+        <h3>Para ver as formas de se adicionar cores em CSS<a href="./paginas/modos-cores.html"> clique aqui</a></h3>
+        <hr>
+        <h2>Gradiente em CSS</h2>
+        <h3>Para ver como usar gradiente em CSS<a href="./paginas/gradiente.html"> clique aqui</a></h3>
+        <hr>
+        <h2>Criando um Exemplo Real</h2>
+        <h3>Veja como ficou <a href="./paginas/exemplo.html">clicando aqui</a></h3>
+        <hr>
+        <h2>Trabalhando com Fontes</h2>
+        <h3>Veja como aplicar fontes com CSS clicando <a href="./paginas/fonts.html">aqui</a></h3>
+        <h3>Veja como aplicar fontes externas diferentes clicando <a href="./paginas/fonts2.html">aqui</a></h3>
+        <hr>
+        <h2>Trabalhando alinhamento</h2>
+        <h3>Para ver os exemplos de alinhamento <a href="./paginas/alinhamento.html">clique aqui</a></h3>
+        <hr>
+        <h2>Trabalhando com IDs, Classes e DIVs</h2>
+        <h3>Para ver como usar as IDs <a href="./paginas/ids.html">clique aqui</a></h3>
+        <h3>Para ver como funcionam as PseudoClasses <a href="./paginas/pseudoclasse.html">clique aqui</a></h3>
+        <h3>Para ver como funciona o hover e como esconder um paragrafo usando ele, <a href="./paginas/hover.html">clique aqui</a></h3>
+        <h3>Para ver como editar o estilo de links <a href="./paginas/link.html">clique aqui</a></h3>
+        <hr>
+        <h2>Trabalhando com Modelos de Caixa</h2>
+        <h3>Para ver o exemplo prático de Modelo de Caixas <a href="./paginas/modelocaixas.html">clique aqui</a></h3>
+        <h3>Para ver para ver como as Grouping Tags funcionam, e como fazer bordas arredondadas <a href="./paginas/caixas.html">clique aqui</a></h3>
+        <h3>Para ver como fazer bordas personalizadas <a href="./paginas/caixas02.html">clique aqui</a></h3>
+    
+</body>
+</html>
