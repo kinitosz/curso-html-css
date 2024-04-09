@@ -224,7 +224,7 @@ else:
        <!-- <source src="src/midia/guivenmdm.m4v">
             <source src="src/midia/guivenmdm.ogv"> 
             <source src="src/midia/guivenmdm.webm">
-            Lembrar de usar o outros formatos!-->
+            Lembrar de usar os outros formatos-->
             <p>Seu navegador não tem compatibilidade com reprodução de videos</p>
         </video>
         <hr>
@@ -307,7 +307,41 @@ else:
         <hr>
         <h2>Trabalhando com Tabelas em HTML</h2>
         <h3>Primeiro e mais importante, NÃO USE TABELA PRA CRIAR A ESTRUTURA DO SEU SITE!</h3>
-        <h3></h3>
+        <h3>Hierarquia de Tabelas (simples)</h3>
+        <ul type="circle">
+            <li>Table - tabela</li>
+                <ul type="circle">
+                    <li>Table Row - linha de tabela</li>
+                    <ul type="circle">
+                        <li>Table Header - cabeçalho da tabela</li>
+                        <li>Table Data - dado de tabela</li>
+                    </ul>
+                </ul>
+        </ul>
+        <h3>Primeira Tabela</h3>
+        <table>
+            <!-- Os fechamentos </tr> e </td> são opcionais -->
+            <tr> <!-- Linha 1 --> 
+                <td>A1</td>
+                <td class="dado">B1</td>
+                <td>C1</td>
+
+            <tr> <!-- Linha 2 --> 
+                <td class="numero">220</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr> <!-- Linha 3 --> 
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+            <tr class="linha"> <!-- Linha 4 --> 
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+            </tr>
+        </table>
     
 </body>
 </html>

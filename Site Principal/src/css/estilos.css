@@ -34,3 +34,28 @@ a{
     color: black;
     text-decoration: none;
 }
+
+table{
+    height: 400px;
+    width: 400px;
+    border-collapse: collapse;
+}
+
+.numero{
+    text-align: right;
+}
+
+tr.linha{
+    background-color: darkgoldenrod;
+}
+
+td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center; /*alinhamento horizontal*/
+    vertical-align: top; /*alinhamento vertical*/
+}
+
+td.dado{
+    background-color: darkgoldenrod;
+}
