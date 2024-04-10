@@ -319,29 +319,180 @@ else:
                 </ul>
         </ul>
         <h3>Primeira Tabela</h3>
-        <table>
-            <!-- Os fechamentos </tr> e </td> são opcionais -->
-            <tr> <!-- Linha 1 --> 
-                <td>A1</td>
-                <td class="dado">B1</td>
-                <td>C1</td>
+        <div class="tabela-simples">
+            <table>
+                <!-- Os fechamentos </tr> e </td> são opcionais -->
+                <tr> <!-- Linha 1 --> 
+                    <td>A1</td>
+                    <td class="dado">B1</td>
+                    <td>C1</td>
 
-            <tr> <!-- Linha 2 --> 
-                <td class="numero">220</td>
-                <td>B2</td>
-                <td>C2</td>
-            </tr>
-            <tr> <!-- Linha 3 --> 
-                <td>A3</td>
-                <td>B3</td>
-                <td>C3</td>
-            </tr>
-            <tr class="linha"> <!-- Linha 4 --> 
-                <td>A4</td>
-                <td>B4</td>
-                <td>C4</td>
-            </tr>
-        </table>
+                <tr> <!-- Linha 2 --> 
+                    <td class="numero">220</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+                <tr> <!-- Linha 3 --> 
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                </tr>
+                <tr class="linha"> <!-- Linha 4 --> 
+                    <td>A4</td>
+                    <td>B4</td>
+                    <td>C4</td>
+                </tr>
+            </table>
+        </div>
+        <h3>Anatomia das Tabelas</h3>
+        <ul type="circle">
+            <li>Table - tabela</li>
+                <ul type="circle">
+                    <li>Caption</li> <!-- Legenda explicativa da Tabela -->
+                    <li>thead</li>
+                    <ul type="circle">
+                        <li>tr, td, th</li>
+                    </ul>
+                </ul>
+                <ul type="circle">
+                    <li>tbody</li>
+                    <ul type="circle">
+                        <li>tr, td, th</li>
+                    </ul>
+                </ul>
+                <ul type="circle">
+                    <li>tfoot</li>
+                    <ul type="circle">
+                        <li>tr, td, th</li>
+                    </ul>
+                </ul>
+        </ul>
+        <h3>Como fazer tabelas maiores</h3>
+        <div class="tabela-grande">
+            <table>
+                <caption>População das Unidades Federativas do Brasil</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Estado</th> 
+                        <th scope="col">População</th><!-- Lembrar sempre de colocar o Escopo dos THs, sendo: col="titulo de coluna", row="titulo de linha" -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>São Paulo</td>
+                        <td class="num">45 919 049</td>
+                    </tr>
+                    <tr>
+                        <td>Minas Gerais</td>
+                        <td class="num">21 168 791</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td class="num">17 264 963</td>
+                    </tr>
+                    <tr>
+                        <td>Bahia</td>
+                        <td class="num">14 141 626</td>
+                    </tr>
+                    <tr>
+                        <td>Paraná</td>
+                        <td class="num">11 444 380	</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Sul</td>
+                        <td class="num">10 882 965</td>
+                    </tr>
+                    <tr>
+                        <td>Pernambuco </td>
+                        <td class="num">9 058 931</td>
+                    </tr>
+                        <td>São Paulo</td>
+                        <td class="num">45 919 049</td>
+                    </tr>
+                    <tr>
+                        <td>Minas Gerais</td>
+                        <td class="num">21 168 791</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td class="num">17 264 963</td>
+                    </tr>
+                    <tr>
+                        <td>Bahia</td>
+                        <td class="num">14 141 626</td>
+                    </tr>
+                    <tr>
+                        <td>Paraná</td>
+                        <td class="num">11 444 380	</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Sul</td>
+                        <td class="num">10 882 965</td>
+                    </tr>
+                    <tr>
+                        <td>Pernambuco </td>
+                        <td class="num">9 058 931</td>
+                    </tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                    </tr>
+                    <tr>
+                        <td>Minas Gerais</td>
+                        <td class="num">21 168 791</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td class="num">17 264 963</td>
+                    </tr>
+                    <tr>
+                        <td>Bahia</td>
+                        <td class="num">14 141 626</td>
+                    </tr>
+                    <tr>
+                        <td>Paraná</td>
+                        <td class="num">11 444 380	</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Sul</td>
+                        <td class="num">10 882 965</td>
+                    </tr>
+                    <tr>
+                        <td>Pernambuco </td>
+                        <td class="num">9 058 931</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                        <th scope="row">Total de Habitantes</th>
+                        <td class="num"><strong>Muitos Habitantes</strong></td>
+                </tfoot>
+            </table>
+        </div>
+        <h3>Mesclagem de celulas em tabelas </h3>
+        <div class="tabela-mesclada">
+            <table>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>K</td>
+                    <td>L</td>
+                </tr>
+            </table>
+        </div>
+
     
 </body>
 </html>

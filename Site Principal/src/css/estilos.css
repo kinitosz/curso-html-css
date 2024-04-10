@@ -35,27 +35,79 @@ a{
     text-decoration: none;
 }
 
-table{
+.tabela-simples table{
     height: 400px;
     width: 400px;
     border-collapse: collapse;
 }
 
-.numero{
+.tabela-simples .numero{
     text-align: right;
 }
 
-tr.linha{
+.tabela-simples tr.linha{
     background-color: darkgoldenrod;
 }
 
-td{
+.tabela-simples td{
     border: 1px solid black;
     padding: 8px;
     text-align: center; /*alinhamento horizontal*/
     vertical-align: top; /*alinhamento vertical*/
 }
 
-td.dado{
+.tabela-simples td.dado{
     background-color: darkgoldenrod;
+}
+
+.tabela-grande table{
+    width: 500px;
+    border-collapse: collapse;
+    position: relative
+}
+
+.tabela-grande caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.tabela-grande td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.tabela-grande thead tr th{
+    position: sticky;
+    top: -1px;
+    background-color: gray;
+}
+
+.tabela-grande thead, tfoot{
+    background-color: gray;
+    color: white;
+}
+
+.tabela-grande tbody tr:nth-child(odd){ /* 2n-1 */
+    background-color: lightgray;
+}
+
+.tabela-grande tbody tr:nth-child(even){ /* 2n */
+    background-color: white;
+}
+
+.tabela-grande .num{
+    text-align: right;
+}
+
+.tabela-mesclada table{
+    border-collapse: collapse;
+    width: 300px;
+}
+
+.tabela-mesclada td{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
 }
