@@ -35,79 +35,94 @@ a{
     text-decoration: none;
 }
 
-.tabela-simples table{
-    height: 400px;
-    width: 400px;
+table, td, th{
+    border: 1px solid black;
     border-collapse: collapse;
 }
 
-.tabela-simples .numero{
+#tabela-simples table{
+    height: 400px;
+    width: 400px;
+}
+
+#tabela-simples .numero{
     text-align: right;
 }
 
-.tabela-simples tr.linha{
+#tabela-simples tr.linha{
     background-color: darkgoldenrod;
 }
 
-.tabela-simples td{
-    border: 1px solid black;
+#tabela-simples td{
     padding: 8px;
     text-align: center; /*alinhamento horizontal*/
     vertical-align: top; /*alinhamento vertical*/
 }
 
-.tabela-simples td.dado{
+#tabela-simples td.dado{
     background-color: darkgoldenrod;
 }
 
-.tabela-grande table{
+#tabela-grande table{
     width: 500px;
-    border-collapse: collapse;
     position: relative
 }
 
-.tabela-grande caption{
+#tabela-grande caption{
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px;
     background-color: lightgray;
 }
 
-.tabela-grande td, th{
-    border: 1px solid black;
+#tabela-grande td, th{
     padding: 10px;
 }
 
-.tabela-grande thead tr th{
+#tabela-grande thead tr th{
     position: sticky;
     top: -1px;
     background-color: gray;
 }
 
-.tabela-grande thead, tfoot{
+#tabela-grande thead, tfoot{
     background-color: gray;
     color: white;
 }
 
-.tabela-grande tbody tr:nth-child(odd){ /* 2n-1 */
+#tabela-grande tbody tr:nth-child(odd){ /* 2n-1 */
     background-color: lightgray;
 }
 
-.tabela-grande tbody tr:nth-child(even){ /* 2n */
+#tabela-grande tbody tr:nth-child(even){ /* 2n */
     background-color: white;
 }
 
-.tabela-grande .num{
+#tabela-grande .num{
     text-align: right;
 }
 
-.tabela-mesclada table{
-    border-collapse: collapse;
+#tabela-mesclada table{
     width: 300px;
 }
 
-.tabela-mesclada td{
+#tabela-mesclada td{
     text-align: center;
-    border: 1px solid black;
     padding: 10px;
+}
+
+#colgroup td, th, caption{
+    padding: 5px 15px;
+}
+
+#colgroup col.cnome{
+    background-color: chartreuse;
+}
+
+#colgroup col.cgrupo{
+    background-color: yellow;
+}
+
+#colgroup col.cprof{
+    background-color: green;
 }
