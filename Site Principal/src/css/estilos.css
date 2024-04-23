@@ -126,3 +126,35 @@ table, td, th{
 #colgroup col.cprof{
     background-color: green;
 }
+
+#tabela-responsiva{
+    overflow-x: auto;
+}
+
+#tabela-responsiva th{
+    background-color: gray;
+}
+
+#tabela-responsiva td, th{
+    padding: 15px 45px;
+}
+
+#tabela-responsiva caption{
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+#tabela-responsiva tr:nth-child(odd){
+    background-color: lightgray;
+}
+
+#tabela-responsiva tr:nth-child(even){
+    background-color: #fff;
+}
+
+iframe{
+    border: 1px solid #000;
+    height: 400px;
+    width: 400px;
+}
