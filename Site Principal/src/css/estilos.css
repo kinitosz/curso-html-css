@@ -158,3 +158,11 @@ iframe{
     height: 400px;
     width: 400px;
 }
+
+#iframe-local iframe{
+    display: block;
+    margin: auto;
+    border: 1px solid #000;
+    height: 600px;
+    width: 800px;
+}
