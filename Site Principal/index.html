@@ -702,11 +702,44 @@ else:
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fuga iste sapiente. Quas, quos excepturi porro eius quo aliquid nihil, id dolor non deleniti temporibus molestiae aspernatur accusamus dolore adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quidem officia? Cumque itaque dolore nulla molestiae. Ea, iste alias, nulla aut recusandae magni, eveniet dolore nobis voluptates atque quos rerum.
             </p>
 
-            <iframe src="./paginas/iframelocal.html" frameborder="0" height="500px" width="500px"></iframe>
+            <iframe src="./paginas/iframelocal.html" frameborder="0" height="500px" width="500px">
+                Infelizmente seu navegador não é compativel.
+            </iframe>
 
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptas quis at consequatur beatae cumque debitis sint earum quod reiciendis nisi error, laboriosam sed perspiciatis voluptate voluptatibus quisquam sunt? Iure! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, esse dolores! Fugiat non minima, officiis aliquid animi suscipit, molestias quas ullam possimus deserunt laboriosam velit quidem dolorem excepturi vel accusantium!
             </p>
+
+        </div>
+        <hr>
+        <div class="nav-iframe">
+            <h3>Abrindo Páginas Dentro do Iframe</h3>
+            <h4>Escolha uma das páginas abaixo</h4>
+            <ul>
+                <li><a href="../Site Principal/paginas/iframelocal.html" target="frame">Página 1</a></li>
+                <li><a href="../Desafio Cordel/index.html" target="frame">Página 2</a></li>
+                <li><a href="./paginas/modelocaixas.html" target="frame">Página 3</a></li>
+            </ul>
+            <iframe name="frame"></iframe>
+        </div>
+        <hr>
+        <div class="nav-iframe">
+            <h3>Colocando Conteúdo no Iframe por Código</h3>
+            <iframe srcdoc="<h3> Aqui temos um exemplo de código sendo colocado diretamente no Iframe</h3> <p>Mas essa não é uma boa opção, a menos que seja para coisas extremamente simples"</p>></iframe>
+        </div>
+        <hr>
+        <div id="iframeseguro">
+            <h3>Como deixar um Iframe mais seguro</h3>
+            <iframe src="paginas/formiframe.html" sandbox="sandbox" referrerpolicy="no-referrer" ></iframe>
+            <p>Utilize o parametro " sandbox='sandbox' " para que a pessoa não consiga interagir com o Iframe, e suas variáveis, para limitar essas interações</p>
+            <p>Utilize o parametro " referrerpolicy='no-referrer' " para que o site dentro do Iframe, não tenha acesso aos seus dados</p>
+            <br>
+            <p>Sem o "sandbox", ou com o "allow-scripts"</p>
+            <iframe src="paginas/scriptiframe.html" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe>
+            <br>
+            <p>Com o "sandbox"</p>
+            <iframe src="paginas/scriptiframe.html" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+
 
         </div>
     
